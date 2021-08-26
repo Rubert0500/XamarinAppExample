@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="OpretApp.Views.LoginPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Log In">
+
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Image Margin="50" Source="OPRET.png" />
+            <Entry
+                FontAttributes="Italic"
+                HeightRequest="40"
+                HorizontalOptions="FillAndExpand"
+                Placeholder="Username"
+                PlaceholderColor="Gray"
+                Text="{Binding User.Username}"
+                TextColor="Black" />
+            <Entry
+                FontAttributes="Italic"
+                HeightRequest="40"
+                IsPassword="True"
+                Placeholder="Password"
+                PlaceholderColor="Gray"
+                Text="{Binding User.Password}"
+                TextColor="Black" />
+            <Button
+                BackgroundColor="Green"
+                Command="{Binding LoginCommand}"
+                FontAttributes="Bold"
+                FontSize="Large"
+                HorizontalOptions="FillAndExpand"
+                Text="✔     Log in"
+                TextColor="White" />
+            <Button
+                BackgroundColor="Gray"
+                Command="{Binding SignUpCommand}"
+                FontAttributes="Bold"
+                FontSize="Subtitle"
+                Text="✔     Sign Up" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

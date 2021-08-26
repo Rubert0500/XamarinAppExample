@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="OpretApp.Views.TopFoodiePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Top Foodie">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label
+                    HorizontalOptions="CenterAndExpand"
+                    Text="Top Foodie Page!"
+                    VerticalOptions="CenterAndExpand" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

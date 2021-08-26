@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="OpretApp.Views.SignUpPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Sing Up">
+
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Image Margin="50" Source="OPRET.png" />
+            <Entry
+                FontAttributes="Italic"
+                HeightRequest="40"
+                Placeholder="Username"
+                PlaceholderColor="Gray"
+                Text="{Binding User.Username}"
+                TextColor="Black" />
+            <Entry
+                FontAttributes="Italic"
+                HeightRequest="40"
+                Placeholder="Email"
+                PlaceholderColor="Gray"
+                Text="{Binding User.Email}"
+                TextColor="Black" />
+            <Entry
+                FontAttributes="Italic"
+                HeightRequest="40"
+                IsPassword="True"
+                Placeholder="Password"
+                PlaceholderColor="Gray"
+                Text="{Binding User.Password}"
+                TextColor="Black" />
+            <Entry
+                FontAttributes="Italic"
+                HeightRequest="40"
+                IsPassword="True"
+                Placeholder="Confirm Password"
+                PlaceholderColor="Gray"
+                Text="{Binding User.ConfirmPassword}"
+                TextColor="Black" />
+            <Button
+                BackgroundColor="Green"
+                Command="{Binding SignUpCommand}"
+                FontAttributes="Bold"
+                FontSize="Subtitle"
+                Text="Sign Up" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

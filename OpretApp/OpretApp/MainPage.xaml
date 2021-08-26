@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="OpretApp.MainPage"
+            xmlns:pages="clr-namespace:OpretApp.Views"
+            BarBackgroundColor="White"
+            BarTextColor="Gray">
+    <NavigationPage.TitleView>
+        <Label
+            FontAttributes="Bold"
+            FontSize="Title"
+            HorizontalOptions="Start"
+            Text="Discovery"
+            TextColor="Black"/>
+        
+    </NavigationPage.TitleView>
+
+    <TabbedPage.Children>
+        <pages:HomePage Title="Home" IconImageSource="homepage.png"/>
+        <pages:DiscoveryPage Title="Discovery" IconImageSource="discovery.png"/>       
+        <pages:BookmarkPage Title="Bookmark" IconImageSource="bookmarkIcon.png" />
+        <pages:TopFoodiePage Title="Top Foodie Page" IconImageSource="trofyIcon.png" />
+        <pages:ProfilePage Title="Profile" IconImageSource="profileIcon.png" />
+
+    </TabbedPage.Children>
+</TabbedPage>

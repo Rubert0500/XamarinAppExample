@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="OpretApp.Views.DiscoveryPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:local="clr-namespace:OpretApp.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Discovery"
+    mc:Ignorable="d">
+    <ContentPage.Content />
+    <ScrollView>
+        <Grid Padding="30">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <local:DiscoveryButtonView
+                Grid.Row="0"
+                Grid.Column="0"
+                BindingContext="{Binding BarsAndHotelsMenuOption}">
+                <local:DiscoveryButtonView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnClicked" />
+                </local:DiscoveryButtonView.GestureRecognizers>
+            </local:DiscoveryButtonView>
+            <local:DiscoveryButtonView
+                Grid.Row="0"
+                Grid.Column="1"
+                BindingContext="{Binding FineDiningMenuOption}">
+                <local:DiscoveryButtonView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnClicked" />
+                </local:DiscoveryButtonView.GestureRecognizers>
+            </local:DiscoveryButtonView>
+            <local:DiscoveryButtonView
+                Grid.Row="1"
+                Grid.Column="0"
+                BindingContext="{Binding CafesMenuOption}">
+                <local:DiscoveryButtonView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnClicked" />
+                </local:DiscoveryButtonView.GestureRecognizers>
+            </local:DiscoveryButtonView>
+            <local:DiscoveryButtonView
+                Grid.Row="1"
+                Grid.Column="1"
+                BindingContext="{Binding NearbyMenuOption}">
+                <local:DiscoveryButtonView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnClicked" />
+                </local:DiscoveryButtonView.GestureRecognizers>
+            </local:DiscoveryButtonView>
+            <local:DiscoveryButtonView
+                Grid.Row="2"
+                Grid.Column="0"
+                BindingContext="{Binding FastFoodMenuOption}">
+                <local:DiscoveryButtonView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnClicked" />
+                </local:DiscoveryButtonView.GestureRecognizers>
+            </local:DiscoveryButtonView>
+            <local:DiscoveryButtonView
+                Grid.Row="2"
+                Grid.Column="1"
+                BindingContext="{Binding FeaturedFoodsMenuOption}">
+                <local:DiscoveryButtonView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnClicked" />
+                </local:DiscoveryButtonView.GestureRecognizers>
+            </local:DiscoveryButtonView>
+        </Grid>
+    </ScrollView>
+</ContentPage>
