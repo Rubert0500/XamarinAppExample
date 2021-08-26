@@ -5,7 +5,7 @@ This repository is for mobile development practices.
 
 # Autentication Pages
 
-![image](https://user-images.githubusercontent.com/48601671/130899959-e8715cd3-32fb-44d5-a520-5ef9829e65ea.png)![image](https://user-images.githubusercontent.com/48601671/130899974-a162c9d4-68a4-4464-ab50-ccc7c00b21fb.png)
+![image](https://user-images.githubusercontent.com/48601671/130899959-e8715cd3-32fb-44d5-a520-5ef9829e65ea.png) ![image](https://user-images.githubusercontent.com/48601671/130899974-a162c9d4-68a4-4464-ab50-ccc7c00b21fb.png)
 
 
 
