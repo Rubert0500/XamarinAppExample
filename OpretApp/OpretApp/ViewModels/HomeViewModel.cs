@@ -11,12 +11,12 @@ namespace OpretApp.ViewModels
 {
     public class HomeViewModel
     {
-        public MenuOptions BarsAndHotelsMenuOption { get; set; } = new MenuOptions();
-        public MenuOptions FineDiningMenuOption { get; set; } = new MenuOptions();        
-        public MenuOptions CafesMenuOption { get; set; } = new MenuOptions();
-        public MenuOptions NearbyMenuOption { get; set; } = new MenuOptions();
-        public MenuOptions FastFoodMenuOption { get; set; } = new MenuOptions();
-        public MenuOptions FeaturedFoodsMenuOption { get; set; } = new MenuOptions();
+        public MenuOption BarsAndHotelsMenuOption { get; set; } = new MenuOption();
+        public MenuOption FineDiningMenuOption { get; set; } = new MenuOption();        
+        public MenuOption CafesMenuOption { get; set; } = new MenuOption();
+        public MenuOption NearbyMenuOption { get; set; } = new MenuOption();
+        public MenuOption FastFoodMenuOption { get; set; } = new MenuOption();
+        public MenuOption FeaturedFoodsMenuOption { get; set; } = new MenuOption();
 
         public HomeViewModel()
         {
